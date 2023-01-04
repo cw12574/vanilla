@@ -15,23 +15,41 @@
       <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
     
   </head>
+
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2BBNBPEH66"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-2BBNBPEH66');
+</script>
+
   <body>
 
     <body class="text-center" style="background-color:#FFF8DD;margin-left:30px">
     
         <main class="container form-signin w-150 m-auto">
-          <form>
+          <form method="POST" action="https://script.google.com/macros/s/AKfycbyBPyt99NT_9qoOazbFkYU4s3foZp5M6Yl3O9AXevcKdLw0tyY9_B8lmYmhx1F0Nosz/exec">
             <h1 class="h3 mb-3 fw-normal">Subscribe to weekly newsletter</h1>
-        
+
             <div class="form-floating">
-                <label for="floatingInput">Email address</label>
-                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput"style="font-size: small;">Name</label><br>
+                <input name="Name" type="text" id="floatingInput" placeholder="Alexa" required>
             </div>
+        
+            <div class="form-floating" style="margin-top:10px">
+                <label for="floatingInput" style="font-size: small;">Email address</label><bR>
+                <input name ="Email" type="email" id="floatingInput" placeholder="name@example.com" required>
+            </div>
+
+            
             
         
             <div class="checkbox mb-3" style="margin-top:20px;margin-bottom:20px">
               <label>
-                <input type="checkbox" value="remember-me"> I'm happy to receive a weekly email containing news stories with the opinions removed. I can opt out at any time.
+                <input type="checkbox" value="remember-me" required> I'm happy to receive a weekly email containing news stories with the opinions removed. I can opt out at any time.
               </label>
             </div>
             <button class="w-100 btn btn-lg btn-primary" type="submit">Submit</button>
